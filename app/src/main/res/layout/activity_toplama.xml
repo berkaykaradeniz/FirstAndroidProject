@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue_Background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/geridon"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/Blue"
+        android:text="@string/geri"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue"
+        android:text="Toplama"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/islem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue"
+        android:text="X + Y = ?"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+    <Button
+        android:id="@+id/secenek1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/secenek2"
+        app:layout_constraintTop_toBottomOf="@id/islem"
+        android:layout_marginTop="10dp"
+        android:text="abc"/>
+
+    <Button
+        android:id="@+id/secenek2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/secenek1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/islem"
+        android:layout_marginTop="10dp"
+        android:text="abc"/>
+
+    <Button
+        android:id="@+id/yeni_soru"
+        android:text="Yeni Soru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secenek1"/>
+
+    <Button
+        android:id="@+id/seviye_artir"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/seviye_düsür"
+        app:layout_constraintTop_toBottomOf="@id/yeni_soru"
+        android:layout_marginTop="10dp"
+        android:text="Seviye Artir"/>
+
+    <Button
+        android:id="@+id/seviye_düsür"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/seviye_artir"
+        android:background="@color/Blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yeni_soru"
+        android:layout_marginTop="10dp"
+        android:text="Seviye Düsür"/>
+
+    <Button
+        android:id="@+id/seviye_artir_x10"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue"
+        android:text="x10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yeni_soru"
+        android:layout_marginTop="15dp"
+        />
+    <Button
+        android:id="@+id/seviye_düsür_x10"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="x10"
+        app:layout_constraintTop_toBottomOf="@id/yeni_soru"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seviye"
+        android:text="Seviye "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seviye_artir"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

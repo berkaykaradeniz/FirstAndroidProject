@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Zihinden Hesaplama</string>
+    <string name="alt_baslik">Alt Başlık</string>
+    <string name="ust_baslik">Menü</string>
+    <string name="toplama">Toplama</string>
+    <string name="bolme">Bölme</string>
+    <string name="cikartma">Çıkartma</string>
+    <string name="carpma">Çarpma</string>
+    <string name="kapat">Kapat</string>
+    <string name="yeni_soru">Yeni Soru</string>
+    <string name="esittir">=</string>
+    <string name="birinci_sayi">X</string>
+    <string name="arti">+</string>
+    <string name="ikincisayi">Y</string>
+    <string name="geri">Geri Dön</string>
+    <string name="soruisareti"> ...</string>
+</resources>
