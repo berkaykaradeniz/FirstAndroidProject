@@ -56,7 +56,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Answer 1"
+            android:text="Answer 3"
             android:id="@+id/btnAnwer3"
             android:layout_weight="1"/>
     </LinearLayout>
