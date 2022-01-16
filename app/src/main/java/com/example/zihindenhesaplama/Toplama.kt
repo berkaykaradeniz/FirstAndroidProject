@@ -22,7 +22,8 @@ class Toplama : AppCompatActivity() {
         var yanlis_cevap = 0
         var dogru_cevap = 0
 
-        seviye_text.text = "Seviye :" + seviye.toString()
+        seviye_text.text = "Seviyee :" + seviye.toString()
+
 
         geridon.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
