@@ -22,8 +22,7 @@ class Toplama : AppCompatActivity() {
         var yanlis_cevap = 0
         var dogru_cevap = 0
 
-        seviye_text.text = "Seviyee :" + seviye.toString()
-
+        seviye_text.text = "Seviye :" + seviye.toString()
 
         geridon.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
@@ -55,7 +54,6 @@ class Toplama : AppCompatActivity() {
                 secenek2.text = dogru_cevap.toString()
                 secenek1.text = yanlis_cevap.toString()
             }
-
         }
         seviye_artir.setOnClickListener{
             seviye += 1
@@ -91,8 +89,6 @@ class Toplama : AppCompatActivity() {
                 secenek1.setBackgroundColor(resources.getColor(R.color.True_Gren))
                 secenek2.setBackgroundColor(RED)
             }
-
         }
-
     }
 }

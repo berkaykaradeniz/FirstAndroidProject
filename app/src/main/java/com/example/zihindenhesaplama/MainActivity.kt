@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         toplamabtn.setOnClickListener{
-            val intent = Intent(this, Toplama::class.java)
+            val intent = Intent(this, MainProcessPage::class.java)
             startActivity(intent)
         }
 
