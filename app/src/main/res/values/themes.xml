@@ -3,7 +3,7 @@
     <style name="Theme.ZihindenHesaplama" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/Blue</item>
-        <item name="colorPrimaryVariant">@color/Blue_Background</item>
+        <item name="colorPrimaryVariant">@color/Blue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

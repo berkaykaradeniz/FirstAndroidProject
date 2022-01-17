@@ -13,6 +13,12 @@ class MainActivity : AppCompatActivity() {
 
         toplamabtn.setOnClickListener{
             val intent = Intent(this, MainProcessPage::class.java)
+            intent.putExtra("ProcessType","1")//Toplama
+            startActivity(intent)
+        }
+        cikartma.setOnClickListener{
+            val intent = Intent(this, MainProcessPage::class.java)
+            intent.putExtra("ProcessType","2")//Toplama
             startActivity(intent)
         }
 

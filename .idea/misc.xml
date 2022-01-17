@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/BerkayMertt/AndroidStudioProjects/ZihindenHesaplama/app/src/main/res/drawable/background_color.xml" value="0.5703125" />
         <entry key="..\:/Users/BerkayMertt/AndroidStudioProjects/ZihindenHesaplama/app/src/main/res/drawable/buttons.xml" value="0.45416666666666666" />
         <entry key="..\:/Users/BerkayMertt/AndroidStudioProjects/ZihindenHesaplama/app/src/main/res/drawable/ic_launcher_background.xml" value="0.346875" />
         <entry key="..\:/Users/BerkayMertt/AndroidStudioProjects/ZihindenHesaplama/app/src/main/res/layout/activity_main.xml" value="0.42481884057971014" />
-        <entry key="..\:/Users/BerkayMertt/AndroidStudioProjects/ZihindenHesaplama/app/src/main/res/layout/activity_main_process_page.xml" value="0.4157608695652174" />
+        <entry key="..\:/Users/BerkayMertt/AndroidStudioProjects/ZihindenHesaplama/app/src/main/res/layout/activity_main_process_page.xml" value="0.4221014492753623" />
         <entry key="..\:/Users/BerkayMertt/AndroidStudioProjects/ZihindenHesaplama/app/src/main/res/layout/activity_toplama.xml" value="0.4171195652173913" />
       </map>
     </option>
