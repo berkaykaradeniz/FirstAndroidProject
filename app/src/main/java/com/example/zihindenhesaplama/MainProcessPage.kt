@@ -1,11 +1,10 @@
 package com.example.zihindenhesaplama
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main_process_page.*
-import kotlinx.android.synthetic.main.activity_toplama.*
 
 class MainProcessPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +12,8 @@ class MainProcessPage : AppCompatActivity() {
         setContentView(R.layout.activity_main_process_page)
 
         //Bakılacak deger diger sayfaya atılarak kod yazılacak.
+        val intent = intent
+
         var ProcessType = intent.getStringExtra("ProcessType")
         Log.i("test", "Test" +ProcessType.toString())
 
