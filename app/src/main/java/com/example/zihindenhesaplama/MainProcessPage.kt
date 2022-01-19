@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.example.zihindenhesaplama.util.Constants
 import kotlinx.android.synthetic.main.activity_main_process_page.*
 
 class MainProcessPage : AppCompatActivity() {
@@ -12,9 +13,9 @@ class MainProcessPage : AppCompatActivity() {
         setContentView(R.layout.activity_main_process_page)
 
         //Bakılacak deger diger sayfaya atılarak kod yazılacak.
-        val intent = intent
+        //val intent = intent
 
-        var ProcessType = intent.getStringExtra("ProcessType")
+        val ProcessType = intent.getStringExtra(Constants.PROCESS_TYPE)
         Log.i("test", "Test" +ProcessType.toString())
 
         when (ProcessType)

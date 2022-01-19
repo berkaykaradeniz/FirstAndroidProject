@@ -105,16 +105,16 @@
         app:layout_constraintTop_toBottomOf="@id/yeni_soru"
         android:layout_marginTop="15dp"
         />
+
     <Button
         android:id="@+id/seviye_düsür_x10"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="x10"
-        app:layout_constraintTop_toBottomOf="@id/yeni_soru"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="15dp"
-
-        />
+        android:text="x10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yeni_soru"
+         />
 
     <TextView
         android:layout_width="200dp"
