@@ -4,5 +4,4 @@ class Constants {
     companion object{
         const val PROCESS_TYPE = "ProcessType"
     }
-
 }
