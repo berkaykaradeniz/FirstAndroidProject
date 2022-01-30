@@ -2,6 +2,7 @@ package com.example.zihindenhesaplama
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.zihindenhesaplama.util.*
 import kotlinx.android.synthetic.main.activity_main_process_page.*
@@ -13,22 +14,31 @@ import kotlin.math.round
 class MainProcessPage : AppCompatActivity() {
     var levelMain = 1
     var wrongAnswer = 0
-    var correctAnswer = 0
     var processType = ""
     var numberOne: Int = 0
     var numberTwo: Int = 0
     var processResult: Int = 0
+    var trueCount: Int = 0
+    var wrongCount: Int = 0
+    var trueAnswer: Int = 0
+
 
     //Doğru cevaptan level - level + aralığıunda yanlış cevaplar set edilecek.
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override
+
+    fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_process_page)
+
+        tvTrueCount.text = "Doğru : " + trueCount
+        tvWrongCount.text = "Yanlış : " + wrongCount
 
         btnBack.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
+
         tvLevelText.text = "Seviye :" + levelMain.toString()
         val procesTypeMain = intent.getStringExtra(Constants.PROCESS_TYPE)
         when (procesTypeMain) {
@@ -96,7 +106,6 @@ class MainProcessPage : AppCompatActivity() {
             return processResult
         }
 
-        var trueAnswer: Int = 0
         var wrongAnswer1: Int = 0
         var wrongAnswer2: Int = 0
 
@@ -135,6 +144,41 @@ class MainProcessPage : AppCompatActivity() {
                 btnAnswer1.text = wrongAnswer2.toString()
             }
         }
+
+        btnAnswer1.setOnClickListener {
+            if (btnAnswer1.text.toString() == trueAnswer.toString())
+                trueCount += 1
+            else
+                wrongCount += 1
+
+            tvTrueCount.text = "Doğru : " + trueCount
+            tvWrongCount.text = "Yanlış : " + wrongCount
+            newQuestion()
+            Answers()
+        }
+        btnAnswer2.setOnClickListener {
+            if (btnAnswer2.text.toString() == trueAnswer.toString())
+                trueCount += 1
+            else
+                wrongCount += 1
+
+            tvTrueCount.text = "Doğru : " + trueCount
+            tvWrongCount.text = "Yanlış : " + wrongCount
+            newQuestion()
+            Answers()
+        }
+        btnAnswer3.setOnClickListener {
+            if (btnAnswer3.text.toString() == trueAnswer.toString())
+                trueCount += 1
+            else
+                wrongCount += 1
+
+            tvTrueCount.text = "Doğru : " + trueCount
+            tvWrongCount.text = "Yanlış : " + wrongCount
+            newQuestion()
+            Answers()
+        }
+
         //Form Create Olduğunda
         newQuestion()
         Answers()
