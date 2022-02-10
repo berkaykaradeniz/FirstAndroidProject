@@ -135,10 +135,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="4dp"
-            android:textSize="10dp"
             android:layout_weight="1"
             android:background="@drawable/button_small"
-            android:text="-10X" />
+            android:text="-10X"
+            android:textSize="10dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLevelDown"
@@ -146,32 +146,32 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="4dp"
-            android:textSize="10dp"
             android:layout_weight="1"
             android:background="@drawable/button_small"
-            android:text="Seviye Düşür" />
+            android:text="Seviye Düşür"
+            android:textSize="10dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLevelUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="10dp"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="@drawable/button_small"
-            android:text="Seviye Yükselt" />
+            android:text="Seviye Yükselt"
+            android:textSize="10dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLevelUp10x"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="10dp"
             android:layout_gravity="center"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="@drawable/button_small"
-            android:text="+10X" />
+            android:text="+10X"
+            android:textSize="10dp" />
 
     </LinearLayout>
 
@@ -189,7 +189,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/llLevels" />
 
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/cbFastQuestions"
+        android:text="Soruları Hızlı Geç"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toTopOf="@id/llNavbar" />
+
     <LinearLayout
+        android:id="@+id/llNavbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"

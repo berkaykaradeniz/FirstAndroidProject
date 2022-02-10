@@ -1,15 +1,11 @@
 package com.example.zihindenhesaplama
 
 import android.content.Intent
+import android.graphics.Color.*
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.zihindenhesaplama.util.*
 import kotlinx.android.synthetic.main.activity_main_process_page.*
-import kotlinx.android.synthetic.main.activity_toplama.*
-import java.text.DecimalFormat
-import java.text.NumberFormat
-import kotlin.math.round
 
 class MainProcessPage : AppCompatActivity() {
     var levelMain = 1
@@ -34,7 +30,7 @@ class MainProcessPage : AppCompatActivity() {
         tvWrongCount.text = "Yanlış : " + wrongCount
 
         btnBack.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainMenu::class.java)
             startActivity(intent)
             finish()
         }
@@ -64,6 +60,10 @@ class MainProcessPage : AppCompatActivity() {
             numberOne = randomNewNumber(levelMain, 1, 10)
             numberTwo = randomNewNumber(levelMain, 1, 10)
             tvQuestionn.text = numberOne.toString() + " " + processType + " " + numberTwo.toString()
+            btnAnswer1.setTextColor(BLACK)
+            btnAnswer2.setTextColor(BLACK)
+            btnAnswer3.setTextColor(BLACK)
+            tvAnswer.setText("?")
         }
 
         fun levelControl() {
@@ -146,37 +146,70 @@ class MainProcessPage : AppCompatActivity() {
         }
 
         btnAnswer1.setOnClickListener {
-            if (btnAnswer1.text.toString() == trueAnswer.toString())
-                trueCount += 1
-            else
-                wrongCount += 1
+            if (btnAnswer1.text != "Doğru") {
+                if (btnAnswer1.text.toString() == trueAnswer.toString()) {
+                    if (tvAnswer.text == "?")
+                        trueCount += 1
+                    btnAnswer1.setText("Doğru")
+                    btnAnswer1.setTextColor(BLUE)
+                    tvAnswer.setText(trueAnswer.toString())
+                } else {
+                    if (tvAnswer.text == "?")
+                        wrongCount += 1
+                    btnAnswer1.setTextColor(RED)
+                }
 
-            tvTrueCount.text = "Doğru : " + trueCount
-            tvWrongCount.text = "Yanlış : " + wrongCount
-            newQuestion()
-            Answers()
+                tvTrueCount.text = "Doğru : " + trueCount
+                tvWrongCount.text = "Yanlış : " + wrongCount
+                if (cbFastQuestions.isChecked) {
+                    newQuestion()
+                    Answers()
+                }
+            }
         }
         btnAnswer2.setOnClickListener {
-            if (btnAnswer2.text.toString() == trueAnswer.toString())
-                trueCount += 1
-            else
-                wrongCount += 1
+            if (btnAnswer2.text != "Doğru") {
+                if (btnAnswer2.text.toString() == trueAnswer.toString()) {
+                    if (tvAnswer.text == "?")
+                        trueCount += 1
+                    btnAnswer2.setText("Doğru")
+                    btnAnswer2.setTextColor(BLUE)
+                    tvAnswer.setText(trueAnswer.toString())
+                } else {
+                    if (tvAnswer.text == "?")
+                        wrongCount += 1
+                    btnAnswer2.setTextColor(RED)
+                }
 
-            tvTrueCount.text = "Doğru : " + trueCount
-            tvWrongCount.text = "Yanlış : " + wrongCount
-            newQuestion()
-            Answers()
+                tvTrueCount.text = "Doğru : " + trueCount
+                tvWrongCount.text = "Yanlış : " + wrongCount
+                if (cbFastQuestions.isChecked) {
+                    newQuestion()
+                    Answers()
+                }
+            }
         }
         btnAnswer3.setOnClickListener {
-            if (btnAnswer3.text.toString() == trueAnswer.toString())
-                trueCount += 1
-            else
-                wrongCount += 1
+            if (btnAnswer3.text != "Doğru") {
+                if (btnAnswer3.text.toString() == trueAnswer.toString()) {
+                    if (tvAnswer.text == "?")
+                        trueCount += 1
+                    btnAnswer3.setText("Doğru")
+                    btnAnswer3.setTextColor(BLUE)
+                    tvAnswer.setText(trueAnswer.toString())
+                } else {
+                    if (tvAnswer.text == "?")
+                        wrongCount += 1
+                    btnAnswer3.setTextColor(RED)
+                }
 
-            tvTrueCount.text = "Doğru : " + trueCount
-            tvWrongCount.text = "Yanlış : " + wrongCount
-            newQuestion()
-            Answers()
+                tvTrueCount.text = "Doğru : " + trueCount
+                tvWrongCount.text = "Yanlış : " + wrongCount
+                if (cbFastQuestions.isChecked) {
+                    newQuestion()
+                    Answers()
+                }
+            }
         }
 
         //Form Create Olduğunda

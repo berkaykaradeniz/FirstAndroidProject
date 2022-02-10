@@ -1,11 +1,9 @@
 package com.example.zihindenhesaplama
 
 import android.content.Intent
-import android.graphics.Color
 import android.graphics.Color.*
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.TextView
 import android.os.CountDownTimer;
 import kotlinx.android.synthetic.main.activity_toplama.*
@@ -25,7 +23,7 @@ class Toplama : AppCompatActivity() {
         seviye_text.text = "Seviye :" + seviye.toString()
 
         geridon.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainMenu::class.java)
             startActivity(intent)
         }
         yeni_soru.setOnClickListener{
