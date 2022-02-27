@@ -15,4 +15,5 @@
     <string name="geri">Geri Dön</string>
     <string name="soruisareti"> ...</string>
     <string name="test">test %1$s dinamik xml</string>
+    <string name="soru_isareti">--</string>
 </resources>
