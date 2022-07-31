@@ -32,7 +32,6 @@ class LoginPage : AppCompatActivity() {
                 Log.i("error",it.toString())
             }
 
-            Log.i("error","testtttttttttttttttttttttttttttttttttttttttttttttttttttttt")
 
             val intent = Intent(this, MainMenu::class.java)
             intent.putExtra(Constants.ANDROID_ID, id)//Toplama İşlemi
