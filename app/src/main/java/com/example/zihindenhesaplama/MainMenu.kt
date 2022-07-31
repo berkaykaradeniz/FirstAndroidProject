@@ -4,6 +4,8 @@ import android.app.Application
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import com.example.zihindenhesaplama.util.Constants
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -11,6 +13,7 @@ class MainMenu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        Toast.makeText(applicationContext,"test",Toast.LENGTH_LONG)
 
         toplamabtn.setOnClickListener {
             val intent = Intent(this, MainProcessPage::class.java)
