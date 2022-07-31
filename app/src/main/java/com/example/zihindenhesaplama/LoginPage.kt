@@ -26,8 +26,6 @@ class LoginPage : AppCompatActivity() {
             androidID = id,
             userName = username
         )
-        Toast.makeText(applicationContext,"test", Toast.LENGTH_LONG)
-
 
         btnLogin.setOnClickListener {
             apiService.addUser(userInfo){
